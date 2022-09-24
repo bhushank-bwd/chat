@@ -5,3 +5,4 @@ $route['default_controller'] = 'Welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['db-demo'] = "db/DB";
+$route['db-demo'] = "admin/Admin";
