@@ -195,6 +195,17 @@ $config['allow_get_array'] = TRUE;
 | your log files will fill up very fast.
 |
 */
+
+function m_loader($class){
+	$file_name = $class.".php";
+	$file = APPPATH."third_party/TABLES.php";
+	if(!file_exists($file)){
+		return false;
+	}else{
+		include_once $file;
+	}
+}
+spl_autoload_register("m_loader");
 $config['log_threshold'] = 0;
 
 /*
