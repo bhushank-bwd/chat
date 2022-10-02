@@ -5,6 +5,6 @@ class Welcome extends MX_Controller {
 
 	public function index()
 	{
-		echo base_url();
+		$this->load->view("welcome_message");
 	}
 }
